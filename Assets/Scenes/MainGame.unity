@@ -1883,19 +1883,43 @@ MonoBehaviour:
     - {fileID: 2117689630013170286, guid: 71c5047ca37862f469c70886d1df35cb, type: 3}
     - {fileID: 4739740947566041955, guid: 18c5924975d1c2e448e0040744fd52a6, type: 3}
     - {fileID: 8051661635647306169, guid: dc23a7daaa81c5a4599a89be4a78b631, type: 3}
-    - {fileID: 5385839425034414448, guid: 2f70fb1517d33bc4a94ea8cedea5e124, type: 3}
+    - {fileID: 8103945709329313596, guid: b9bcf49b4b1d981448a0c9a1e4a041eb, type: 3}
   - enemyCount: 10
     spawnableEnemies:
     - {fileID: 2117689630013170286, guid: 71c5047ca37862f469c70886d1df35cb, type: 3}
     - {fileID: 4739740947566041955, guid: 18c5924975d1c2e448e0040744fd52a6, type: 3}
     - {fileID: 8051661635647306169, guid: dc23a7daaa81c5a4599a89be4a78b631, type: 3}
-    - {fileID: 5385839425034414448, guid: 2f70fb1517d33bc4a94ea8cedea5e124, type: 3}
+    - {fileID: 8103945709329313596, guid: b9bcf49b4b1d981448a0c9a1e4a041eb, type: 3}
   - enemyCount: 10
     spawnableEnemies:
     - {fileID: 2117689630013170286, guid: 71c5047ca37862f469c70886d1df35cb, type: 3}
     - {fileID: 4739740947566041955, guid: 18c5924975d1c2e448e0040744fd52a6, type: 3}
     - {fileID: 8051661635647306169, guid: dc23a7daaa81c5a4599a89be4a78b631, type: 3}
-    - {fileID: 5385839425034414448, guid: 2f70fb1517d33bc4a94ea8cedea5e124, type: 3}
+    - {fileID: 8103945709329313596, guid: b9bcf49b4b1d981448a0c9a1e4a041eb, type: 3}
+  - enemyCount: 15
+    spawnableEnemies:
+    - {fileID: 2117689630013170286, guid: 71c5047ca37862f469c70886d1df35cb, type: 3}
+    - {fileID: 4739740947566041955, guid: 18c5924975d1c2e448e0040744fd52a6, type: 3}
+    - {fileID: 8051661635647306169, guid: dc23a7daaa81c5a4599a89be4a78b631, type: 3}
+    - {fileID: 8103945709329313596, guid: b9bcf49b4b1d981448a0c9a1e4a041eb, type: 3}
+  - enemyCount: 20
+    spawnableEnemies:
+    - {fileID: 2117689630013170286, guid: 71c5047ca37862f469c70886d1df35cb, type: 3}
+    - {fileID: 4739740947566041955, guid: 18c5924975d1c2e448e0040744fd52a6, type: 3}
+    - {fileID: 8051661635647306169, guid: dc23a7daaa81c5a4599a89be4a78b631, type: 3}
+    - {fileID: 8103945709329313596, guid: b9bcf49b4b1d981448a0c9a1e4a041eb, type: 3}
+  - enemyCount: 20
+    spawnableEnemies:
+    - {fileID: 2117689630013170286, guid: 71c5047ca37862f469c70886d1df35cb, type: 3}
+    - {fileID: 4739740947566041955, guid: 18c5924975d1c2e448e0040744fd52a6, type: 3}
+    - {fileID: 8051661635647306169, guid: dc23a7daaa81c5a4599a89be4a78b631, type: 3}
+    - {fileID: 8103945709329313596, guid: b9bcf49b4b1d981448a0c9a1e4a041eb, type: 3}
+  - enemyCount: 25
+    spawnableEnemies:
+    - {fileID: 2117689630013170286, guid: 71c5047ca37862f469c70886d1df35cb, type: 3}
+    - {fileID: 4739740947566041955, guid: 18c5924975d1c2e448e0040744fd52a6, type: 3}
+    - {fileID: 8051661635647306169, guid: dc23a7daaa81c5a4599a89be4a78b631, type: 3}
+    - {fileID: 8103945709329313596, guid: b9bcf49b4b1d981448a0c9a1e4a041eb, type: 3}
   timeBetweenWaves: 15
 --- !u!1 &541901510
 GameObject:
