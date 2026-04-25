@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 7087093338833496814}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2033, y: 0.1627, z: 0}
-  m_LocalScale: {x: 1.21662, y: 1.21662, z: 6.0831}
+  m_LocalPosition: {x: 0.0701, y: 0.0561, z: 0}
+  m_LocalScale: {x: 0.5506422, y: 0.5506422, z: 2.753211}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -84,12 +84,12 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 10
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 1192843865154028290, guid: 5d1bd710e52edaf46a2a21d7171e8ed4, type: 3}
+  m_Sprite: {fileID: 1192843865154028290, guid: 196903a4aebca5845b1b26cae9e06da2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.4, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bullet
   speed: 10
-  damage: 1
+  damage: 20
 --- !u!58 &-6028655100943623207
 CircleCollider2D:
   m_ObjectHideFlags: 0

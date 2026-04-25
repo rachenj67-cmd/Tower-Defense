@@ -1,22 +1,40 @@
 ﻿using UnityEngine;
+using System; // จำเป็นสำหรับการใช้ Action
 
 public class EnemyHealth : MonoBehaviour
 {
-    public int maxHealth = 3; 
-    private int currentHealth;
+    [Header("Settings")]
+    public float maxHealth = 100f;
+    public float goldReward = 10f; // ตั้งค่าเงินแยกรายตัวได้
+
+    private float currentHealth;
+    private bool isDead = false; // กันบั๊กกรณีโดนดาเมจซ้ำตอนกำลังตาย
+
+    // ใช้ Action เพื่อแจ้งเตือน UI หรือ Effect อื่นๆ ว่าเลือดเปลี่ยนแล้ว
+    // ส่ง (currentHealth, maxHealth) ไปให้ผู้ที่สนใจ
+    public event Action<float, float> OnHealthChanged;
+
+    public void SetStats(float hp)
+    {
+        maxHealth = hp;
+        currentHealth = maxHealth;
+    }
 
     void Start()
     {
         currentHealth = maxHealth;
     }
 
-
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage) // เปลี่ยนเป็น float เพื่อความแม่นยำ
     {
+        if (isDead) return; // ถ้าตายแล้ว ไม่ต้องคำนวณอะไรอีก
+
         currentHealth -= damage;
 
-     
-        Debug.Log("เลือดซอมบี้ลดเหลือ: " + currentHealth);
+        // แจ้งเตือนไปยัง UI (เช่น แถบเลือด)
+        OnHealthChanged?.Invoke(currentHealth, maxHealth);
+
+        Debug.Log($"{gameObject.name} เลือดเหลือ: {currentHealth}");
 
         if (currentHealth <= 0)
         {
@@ -26,9 +44,10 @@ public class EnemyHealth : MonoBehaviour
 
     void Die()
     {
-       
-        Destroy(gameObject);
+        isDead = true; // ล็อกสถานะว่าตายแล้ว
+        GameManager.instance.AddGold((int)goldReward);
 
-       
+        // ตรงนี้คุณอาจจะเพิ่ม Animation การตาย หรือ Particle Effect ก่อน Destroy
+        Destroy(gameObject);
     }
 }
